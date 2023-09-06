@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+
+    --color1: hsl(0, 0%, 100%);
+    --color2: hsl(30, 38%, 92%);
+    --color3: hsl(228, 12%, 48%);
+    --color4: hsl(158, 36%, 37%);
+    --color5: hsl(212, 21%, 14%);
+    
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body , html {
+    background-color: var(--color2);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: var(--color1);
+    width: 375px;
+    height: 675px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+    transition: width 300ms, height 300ms;
+    transition-timing-function: ease;
+}
+
+section#card > div#image {
+    display: block;
+    background: var(--color2) url(../images/image-product-mobile.jpg) no-repeat;
+    background-size: cover;
+    height: 270px;
+}
+
+section#card > div#container {
+    padding: 30px 40px 30px 40px;
+}
+
+section#card > div#container > h2 {
+    padding-bottom: 15px;
+    font-family: var(--font1);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color3);
+    letter-spacing: 5px;
+}
+
+section#card > div#container > h1 {
+    padding-bottom: 15px;
+    font-family: var(--font2);
+    color: var(--color5);
+    font-size: 2em;
+}
+
+section#card > div#container > p {
+    padding-bottom: 20px;
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+section#card > div#container > div > span#Dprice {
+    padding-right: 20px;
+    font-family: var(--font2);
+    color: var(--color4);
+    font-size: 2em;
+}
+
+section#card > div#container > div > span#Fprice {
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 1em;
+}
+
+section#card > div#container > div#button {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--color4);
+    font-family: var(--font1);
+    color: var(--color1);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+section#card > div#container > div#button:hover {
+    background-color: hsl(158, 37%, 16%);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
+
+/*main > div#container > h2 {
+    padding-bottom: 10px;
+    font-family: var(--font1);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color3);
+    letter-spacing: 5px;
+}
+
+main > div#container > h1 {
+    padding-bottom: 15px;
+    font-family: var(--font2);
+    color: var(--color5);
+}
+
+main > div#container > p {
+    padding-bottom: 15px;
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+--------------------
+span#Dprice {
+    padding-right: 20px;
+    font-family: var(--font2);
+    color: var(--color4);
+    font-size: 2em;
+}
+
+span#Fprice {
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 1em;
+}
+
+div#button {
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--color4);
+    font-family: var(--font1);
+    color: var(--color1);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+*/
