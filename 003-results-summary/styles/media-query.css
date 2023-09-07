@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+
+    main > section#card {
+        height: 450px;
+        width: 690px;
+        border-radius: 30px;
+    }
+
+    main > section#card > section#result {
+        float: left;
+        width: 320px;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    main > section#card > section#summary {
+        float: right;
+        width: 370px;
+    }
+
+    main > section#card > section#result > div#circle {
+        width: 170px;
+        height: 170px;
+    }
+
+    main > section#card > section#result > div > span#seventysix {
+        font-size: 4em;
+
+    }
+
+}

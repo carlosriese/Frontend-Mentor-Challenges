@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+
+    /*### Primary*/
+    --color1: hsl(0, 100%, 67%);
+    --color2: hsl(39, 100%, 56%);
+    --color3: hsl(166, 100%, 37%);
+    --color4: hsl(234, 85%, 45%);
+
+    /*## Gradients*/
+    /*Background*/
+    --color5: hsl(252, 100%, 67%);
+    --color6: hsl(241, 81%, 54%);
+    /*Circle*/
+    --color7: hsla(256, 72%, 46%, 1);
+    --color8: hsla(241, 72%, 46%, 0);
+
+    /*### Neutral*/
+    --color9:  hsl(0, 0%, 100%);
+    --color10: hsl(221, 100%, 96%);
+    --color11: hsl(241, 100%, 89%);
+    --color12: hsl(224, 30%, 27%);
+
+    --font1: 'Hanken Grotesk', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body , html {
+    background-color: var(--color10);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+main > section#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: var(--color9);
+    width: 375px;
+    height: 830px;
+    box-shadow: 10px 10px 20px hsla(241, 100%, 89%, 0.500);
+    border-radius: 0px 0px 30px 50px;
+
+    transform: translate(-50%, -50%);
+    transition: width 300ms, height 300ms;
+    transition-timing-function: ease;
+}
+
+main > section#card > section#result {
+    display: block;
+    background-image: linear-gradient(to bottom, var(--color5), var(--color6));
+    height: 365px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+main > section#card > section#result > h1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: var(--color11);
+    text-align: center;
+}
+
+main > section#card > section#result > div#circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+
+    background-image: linear-gradient(to bottom, var(--color7), var(--color8));
+    border-radius: 50%;
+}
+
+main > section#card > section#result > div > span#seventysix {
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--color10);
+    text-align: center;
+}
+
+main > section#card > section#result > div > span#onehundred {
+    color: var(--color5);
+}
+
+main > section#card > section#result > h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: var(--color10);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main > section#card > section#result > p {
+    margin: 0px 50px 0px 50px;
+    color: var(--color11);
+    text-align: center;
+}
+
+main > section#card > section#summary > h1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    color: var(--color12);
+}
+
+main > section#card > section#summary > div#space {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main > section#card > section#summary > div#space > div.item1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin: 0px 30px 0px 30px;
+    padding: 15px;
+    background-color: hsla(0, 100%, 67%, 0.100);
+    border-radius: 15px;
+}
+
+main > section#card > section#summary > div#space > div.item1 > span#red {
+    color: var(--color1);
+}
+
+main > section#card > section#summary > div#space > div.item2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin: 0px 30px 0px 30px;
+    padding: 15px;
+    background-color: hsl(39, 100%, 56%, 0.100);
+    border-radius: 15px;
+}
+
+main > section#card > section#summary > div#space > div.item2 > span#yellow {
+    color: var(--color2);
+}
+
+main > section#card > section#summary > div#space > div.item3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin: 0px 30px 0px 30px;
+    padding: 15px;
+    background-color: hsl(166, 100%, 37%, 0.100);
+    border-radius: 15px;
+}
+
+main > section#card > section#summary > div#space > div.item3 > span#green {
+    color: var(--color3);
+}
+
+main > section#card > section#summary > div#space > div.item4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin: 0px 30px 0px 30px;
+    padding: 15px;
+    background-color: hsl(234, 85%, 45%, 0.100);
+    border-radius: 15px;
+}
+
+main > section#card > section#summary > div#space > div.item4 > span#blue {
+    color: var(--color4);
+}
+
+main > section#card > section#summary > div#button {
+    margin: auto;
+    margin: 15px 30px 0px 30px;
+    padding: 15px;
+    background-color: var(--color12);
+    color: var(--color9);
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 30px;
+}
+
+main > section#card > section#summary > div#button:hover {
+    background-color: var(--color6);
+    cursor: pointer;
+}
