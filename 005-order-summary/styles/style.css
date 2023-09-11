@@ -35,6 +35,7 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+    background-color: var(--color1);
 }
 
 main {
