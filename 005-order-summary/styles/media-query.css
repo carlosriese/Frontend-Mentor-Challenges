@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    main {
+        width: 25em;
+        height: 39em;
+        background-color: var(--color3);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    section.image {
+        background-size: cover;
+    }
+
+    section.content > div > p {
+        width: 19em;
+        margin-left: -0em;
+    }
+
+    div.container {
+        width: 19em;
+    }
+
+    div.planbox1 {
+        margin-left: 0em;
+        margin-bottom: 0.5em;
+    }
+    div.buttonP {
+        margin-left: -1em;
+        width: 21em;
+    }
+}
