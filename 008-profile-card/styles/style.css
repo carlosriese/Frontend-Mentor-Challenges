@@ -70,7 +70,7 @@ div.photo img {
     color: var(--02Very-dark-desaturated-blue);
 }
 
-.name h2 {
+.name h1 {
     font-size: 1.2em;
     margin-bottom: 0.3em;
 }
