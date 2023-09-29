@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 639px) {
+
+    .sedans {        
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+
+    .sedans, .suvs, .luxury {
+        padding: 3em 1.5em 3em 3em;
+    }
+
+    .sedans p, .suvs p, .luxury p {
+        margin-bottom: 1em;
+    }
+
+    .luxury {
+        border-radius: 0em 0em 0.5em 0.5em;
+    }
+
+}
